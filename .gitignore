@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 本地收到的文件、个人配置（可能含 WiFi 密码）
+receiver/received/
+receiver/config.json
+**/received/
+**/config.json
+
+# PyInstaller 中间产物（源码在 receiver/，安装包只放 master）
+receiver/build/
+receiver/dist/
+
+# 发布包体积大，只推到 master，不进 dev
+release/
+*.zip
+
+# 分析临时文件
+video_analysis/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
